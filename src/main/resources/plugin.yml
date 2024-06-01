@@ -1,14 +1,48 @@
-name: testplugin
+name: Essential_Essentials
 version: '${project.version}'
-main: com.brodi.test.Main
+main: com.brodi.eesentials.Main
 api-version: '1.20'
-authors: [1lent]
-description: Cool test plugin
+authors: [1lent, SpaceTy]
+description: Only the essential Essentials commands
 commands:
   heal:
+    description: Heal yourself
+    usage: /<command>
+    permission: eesentials.heal
+    default: op
   craft:
+    description: Open the crafting table
+    usage: /<command>
+    permission: eesentials.craft
+    default: op
   eat:
+    description: Fill the player's hunger bar
+    usage: /<command>
+    permission: eesentials.eat
+    default: op
+    alliases: feed
   fly:
+    description: Toggle flight mode
+    usage: /<command>
+    permission: eesentials.fly
+    default: op
   anvil:
+    description: Open the anvil
+    usage: /<command>
+    permission: eesentials.anvil
+    default: op
   echest:
+    description: Open the ender chest
+    usage: /<command>
+    permission: eesentials.echest
+    default: op
+    aliases: ec
   grindstone:
+    description: Open a grindstone interface
+    usage: /<command>
+    permission: eesentials.grindstone
+    default: op
+permissions:
+  eesentials.admin:
+    description: Gives access to all admin eesential commands
+    default: op
