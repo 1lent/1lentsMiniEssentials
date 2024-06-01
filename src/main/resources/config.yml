@@ -1,0 +1,17 @@
+messages:
+  anvil: "&5You opened the anvil"
+  crafting: "&5You opened the crafting table"
+  eat: "&5You filled your hunger"
+  enderchest: 
+    self: "&5You oppened your enderchest"
+    other: "&5You oppened %player%'s enderchest"
+  flight:
+    enabled: "&5%player% is now flying"
+    disabled: "&5%player% is no longer flying"
+  grindstone: "&5You opened the grindstone"
+  heal: "&5%player% has been healed"
+  healed: "&5You have been healed"
+  reloaded: "&5Plugin reloaded"
+  player:
+    notfound: "&5Could not find %player% online"
+    nopermission: "&5You do not have permission to do that"

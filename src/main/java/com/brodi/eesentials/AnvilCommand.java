@@ -1,4 +1,4 @@
-package com.brodi.test;
+package com.brodi.eesentials;
 
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
@@ -7,19 +7,18 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.event.inventory.InventoryType;
 
-public class CraftCommand implements CommandExecutor {
+import com.brodi.eesentials.util.ConfigHandler;
+import com.brodi.eesentials.util.PlayerMessage;
 
+public class AnvilCommand implements CommandExecutor {
+    
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
 
-
         if (sender instanceof Player player) {
-            player.openInventory(Bukkit.createInventory(null, InventoryType.WORKBENCH, "Mobile Crafting"));
-
-
+            PlayerMessage.send(player, ConfigHandler.getInstance().getString("messages.anvil"));
+            player.openInventory(Bukkit.createInventory(null, InventoryType.ANVIL, "Mobile Anvil"));
         }
         return true;
     }
-
-
 }
